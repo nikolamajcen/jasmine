@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FA593D4260655E400F3ED9C /* JasmineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA593D3260655E400F3ED9C /* JasmineApp.swift */; };
+		4FA593D6260655E400F3ED9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA593D5260655E400F3ED9C /* ContentView.swift */; };
+		4FA593D8260655E500F3ED9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA593D7260655E500F3ED9C /* Assets.xcassets */; };
+		4FA593DB260655E500F3ED9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA593DA260655E500F3ED9C /* Preview Assets.xcassets */; };
+		4FA593F626065AAF00F3ED9C /* JasmineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA593F526065AAF00F3ED9C /* JasmineTests.swift */; };
+		4FA5940326065B4400F3ED9C /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5940226065B4400F3ED9C /* Command.swift */; };
+		4FA5940D26065BF800F3ED9C /* PackageInstallCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5940C26065BF800F3ED9C /* PackageInstallCommand.swift */; };
+		4FA5941C2606608900F3ED9C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5941B2606608900F3ED9C /* Task.swift */; };
+		4FA5942126066E8400F3ED9C /* ListAllPackagesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5942026066E8400F3ED9C /* ListAllPackagesCommand.swift */; };
+		4FA594352606B7DC00F3ED9C /* PackageSearchCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA594342606B7DC00F3ED9C /* PackageSearchCommand.swift */; };
+		4FA594392606B84C00F3ED9C /* PackageInfoCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA594382606B84C00F3ED9C /* PackageInfoCommand.swift */; };
+		4FA594412606B9B800F3ED9C /* PackageUninstallCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA594402606B9B800F3ED9C /* PackageUninstallCommand.swift */; };
+		4FA594452606B9C000F3ED9C /* PackageUpdateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA594442606B9C000F3ED9C /* PackageUpdateCommand.swift */; };
+		4FA594492606BAA100F3ED9C /* ListInstalledPackagesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA594482606BAA100F3ED9C /* ListInstalledPackagesCommand.swift */; };
+		4FA5944D2606BB2100F3ED9C /* ManagerHealthCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5944C2606BB2100F3ED9C /* ManagerHealthCommand.swift */; };
+		4FA594542606BB2F00F3ED9C /* ManagerUpdateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA594532606BB2F00F3ED9C /* ManagerUpdateCommand.swift */; };
+		4FA5945A2606BB9300F3ED9C /* ManagerConfigCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA594592606BB9300F3ED9C /* ManagerConfigCommand.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FA593F826065AAF00F3ED9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FA593C8260655E400F3ED9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FA593CF260655E400F3ED9C;
+			remoteInfo = Jasmine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FA593D0260655E400F3ED9C /* Jasmine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jasmine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA593D3260655E400F3ED9C /* JasmineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JasmineApp.swift; sourceTree = "<group>"; };
+		4FA593D5260655E400F3ED9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4FA593D7260655E500F3ED9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FA593DA260655E500F3ED9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FA593DC260655E500F3ED9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA593DD260655E500F3ED9C /* Jasmine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jasmine.entitlements; sourceTree = "<group>"; };
+		4FA593F326065AAF00F3ED9C /* JasmineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JasmineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA593F526065AAF00F3ED9C /* JasmineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JasmineTests.swift; sourceTree = "<group>"; };
+		4FA593F726065AAF00F3ED9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA5940226065B4400F3ED9C /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		4FA5940C26065BF800F3ED9C /* PackageInstallCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageInstallCommand.swift; sourceTree = "<group>"; };
+		4FA5941B2606608900F3ED9C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		4FA5942026066E8400F3ED9C /* ListAllPackagesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAllPackagesCommand.swift; sourceTree = "<group>"; };
+		4FA594342606B7DC00F3ED9C /* PackageSearchCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageSearchCommand.swift; sourceTree = "<group>"; };
+		4FA594382606B84C00F3ED9C /* PackageInfoCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageInfoCommand.swift; sourceTree = "<group>"; };
+		4FA594402606B9B800F3ED9C /* PackageUninstallCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageUninstallCommand.swift; sourceTree = "<group>"; };
+		4FA594442606B9C000F3ED9C /* PackageUpdateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageUpdateCommand.swift; sourceTree = "<group>"; };
+		4FA594482606BAA100F3ED9C /* ListInstalledPackagesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInstalledPackagesCommand.swift; sourceTree = "<group>"; };
+		4FA5944C2606BB2100F3ED9C /* ManagerHealthCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerHealthCommand.swift; sourceTree = "<group>"; };
+		4FA594532606BB2F00F3ED9C /* ManagerUpdateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerUpdateCommand.swift; sourceTree = "<group>"; };
+		4FA594592606BB9300F3ED9C /* ManagerConfigCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerConfigCommand.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FA593CD260655E400F3ED9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA593F026065AAF00F3ED9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FA593C7260655E400F3ED9C = {
+			isa = PBXGroup;
+			children = (
+				4FA593D2260655E400F3ED9C /* Jasmine */,
+				4FA593F426065AAF00F3ED9C /* JasmineTests */,
+				4FA593D1260655E400F3ED9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FA593D1260655E400F3ED9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FA593D0260655E400F3ED9C /* Jasmine.app */,
+				4FA593F326065AAF00F3ED9C /* JasmineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FA593D2260655E400F3ED9C /* Jasmine */ = {
+			isa = PBXGroup;
+			children = (
+				4FA593E42606563D00F3ED9C /* Application */,
+				4FA593E62606564B00F3ED9C /* Common */,
+				4FA593E72606565000F3ED9C /* Modules */,
+				4FA593E52606564400F3ED9C /* Resources */,
+				4FA593E82606569F00F3ED9C /* Supporting Files */,
+				4FA593EB2606570E00F3ED9C /* Preview Content */,
+			);
+			path = Jasmine;
+			sourceTree = "<group>";
+		};
+		4FA593E42606563D00F3ED9C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4FA593D3260655E400F3ED9C /* JasmineApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4FA593E52606564400F3ED9C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FA593D7260655E500F3ED9C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4FA593E62606564B00F3ED9C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5941A2606608100F3ED9C /* Task */,
+				4FA593FF26065B2400F3ED9C /* Commands */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4FA593E72606565000F3ED9C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4FA593D5260655E400F3ED9C /* ContentView.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4FA593E82606569F00F3ED9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FA593DC260655E500F3ED9C /* Info.plist */,
+				4FA593DD260655E500F3ED9C /* Jasmine.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FA593EB2606570E00F3ED9C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4FA593DA260655E500F3ED9C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FA593F426065AAF00F3ED9C /* JasmineTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FA593F526065AAF00F3ED9C /* JasmineTests.swift */,
+				4FA593F726065AAF00F3ED9C /* Info.plist */,
+			);
+			path = JasmineTests;
+			sourceTree = "<group>";
+		};
+		4FA593FF26065B2400F3ED9C /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5940226065B4400F3ED9C /* Command.swift */,
+				4FA5942026066E8400F3ED9C /* ListAllPackagesCommand.swift */,
+				4FA594482606BAA100F3ED9C /* ListInstalledPackagesCommand.swift */,
+				4FA594592606BB9300F3ED9C /* ManagerConfigCommand.swift */,
+				4FA5944C2606BB2100F3ED9C /* ManagerHealthCommand.swift */,
+				4FA594532606BB2F00F3ED9C /* ManagerUpdateCommand.swift */,
+				4FA594382606B84C00F3ED9C /* PackageInfoCommand.swift */,
+				4FA5940C26065BF800F3ED9C /* PackageInstallCommand.swift */,
+				4FA594342606B7DC00F3ED9C /* PackageSearchCommand.swift */,
+				4FA594402606B9B800F3ED9C /* PackageUninstallCommand.swift */,
+				4FA594442606B9C000F3ED9C /* PackageUpdateCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		4FA5941A2606608100F3ED9C /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5941B2606608900F3ED9C /* Task.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FA593CF260655E400F3ED9C /* Jasmine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA593E0260655E500F3ED9C /* Build configuration list for PBXNativeTarget "Jasmine" */;
+			buildPhases = (
+				4FA593CC260655E400F3ED9C /* Sources */,
+				4FA593CD260655E400F3ED9C /* Frameworks */,
+				4FA593CE260655E400F3ED9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jasmine;
+			productName = Jasmine;
+			productReference = 4FA593D0260655E400F3ED9C /* Jasmine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FA593F226065AAF00F3ED9C /* JasmineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA593FC26065AAF00F3ED9C /* Build configuration list for PBXNativeTarget "JasmineTests" */;
+			buildPhases = (
+				4FA593EF26065AAF00F3ED9C /* Sources */,
+				4FA593F026065AAF00F3ED9C /* Frameworks */,
+				4FA593F126065AAF00F3ED9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FA593F926065AAF00F3ED9C /* PBXTargetDependency */,
+			);
+			name = JasmineTests;
+			productName = JasmineTests;
+			productReference = 4FA593F326065AAF00F3ED9C /* JasmineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FA593C8260655E400F3ED9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4FA593CF260655E400F3ED9C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4FA593F226065AAF00F3ED9C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4FA593CF260655E400F3ED9C;
+					};
+				};
+			};
+			buildConfigurationList = 4FA593CB260655E400F3ED9C /* Build configuration list for PBXProject "Jasmine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FA593C7260655E400F3ED9C;
+			productRefGroup = 4FA593D1260655E400F3ED9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FA593CF260655E400F3ED9C /* Jasmine */,
+				4FA593F226065AAF00F3ED9C /* JasmineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FA593CE260655E400F3ED9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA593DB260655E500F3ED9C /* Preview Assets.xcassets in Resources */,
+				4FA593D8260655E500F3ED9C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA593F126065AAF00F3ED9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FA593CC260655E400F3ED9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA593D6260655E400F3ED9C /* ContentView.swift in Sources */,
+				4FA594412606B9B800F3ED9C /* PackageUninstallCommand.swift in Sources */,
+				4FA5940D26065BF800F3ED9C /* PackageInstallCommand.swift in Sources */,
+				4FA5942126066E8400F3ED9C /* ListAllPackagesCommand.swift in Sources */,
+				4FA594492606BAA100F3ED9C /* ListInstalledPackagesCommand.swift in Sources */,
+				4FA5941C2606608900F3ED9C /* Task.swift in Sources */,
+				4FA594452606B9C000F3ED9C /* PackageUpdateCommand.swift in Sources */,
+				4FA594352606B7DC00F3ED9C /* PackageSearchCommand.swift in Sources */,
+				4FA594542606BB2F00F3ED9C /* ManagerUpdateCommand.swift in Sources */,
+				4FA593D4260655E400F3ED9C /* JasmineApp.swift in Sources */,
+				4FA5944D2606BB2100F3ED9C /* ManagerHealthCommand.swift in Sources */,
+				4FA5945A2606BB9300F3ED9C /* ManagerConfigCommand.swift in Sources */,
+				4FA5940326065B4400F3ED9C /* Command.swift in Sources */,
+				4FA594392606B84C00F3ED9C /* PackageInfoCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA593EF26065AAF00F3ED9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA593F626065AAF00F3ED9C /* JasmineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FA593F926065AAF00F3ED9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FA593CF260655E400F3ED9C /* Jasmine */;
+			targetProxy = 4FA593F826065AAF00F3ED9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4FA593DE260655E500F3ED9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FA593DF260655E500F3ED9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4FA593E1260655E500F3ED9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Jasmine/Supporting Files/Jasmine.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Jasmine/Preview Content\"";
+				DEVELOPMENT_TEAM = 7R59B448X8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Jasmine/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolamajcen.Jasmine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4FA593E2260655E500F3ED9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Jasmine/Supporting Files/Jasmine.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Jasmine/Preview Content\"";
+				DEVELOPMENT_TEAM = 7R59B448X8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Jasmine/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolamajcen.Jasmine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4FA593FA26065AAF00F3ED9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7R59B448X8;
+				INFOPLIST_FILE = JasmineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolamajcen.JasmineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jasmine.app/Contents/MacOS/Jasmine";
+			};
+			name = Debug;
+		};
+		4FA593FB26065AAF00F3ED9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7R59B448X8;
+				INFOPLIST_FILE = JasmineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolamajcen.JasmineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jasmine.app/Contents/MacOS/Jasmine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FA593CB260655E400F3ED9C /* Build configuration list for PBXProject "Jasmine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA593DE260655E500F3ED9C /* Debug */,
+				4FA593DF260655E500F3ED9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA593E0260655E500F3ED9C /* Build configuration list for PBXNativeTarget "Jasmine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA593E1260655E500F3ED9C /* Debug */,
+				4FA593E2260655E500F3ED9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA593FC26065AAF00F3ED9C /* Build configuration list for PBXNativeTarget "JasmineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA593FA26065AAF00F3ED9C /* Debug */,
+				4FA593FB26065AAF00F3ED9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FA593C8260655E400F3ED9C /* Project object */;
+}
